@@ -16,6 +16,6 @@ aws lambda get-function --function-name "value" --region "value" --output "value
 
 printf "Calling a Lambda function\n"
 
-aws lambda invoke --function-name "value" --invocation-type "value" --payload "value" --output "value" <outfile>
+aws lambda invoke --function-name "value" --invocation-type "value" --payload "value" --output "value" "outfile"
 
 

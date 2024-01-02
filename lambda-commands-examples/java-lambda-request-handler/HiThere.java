@@ -1,5 +1,3 @@
-package package.name;
-
 public class HiThere {
 
 	public String handler(String name) {
