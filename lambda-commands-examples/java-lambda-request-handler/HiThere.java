@@ -1,8 +1,8 @@
-package package.name
+package package.name;
 
 public class HiThere {
 
-	public String handler(String name){
+	public String handler(String name) {
 		return " Hi there " + name + " =D ";
 	}
 
