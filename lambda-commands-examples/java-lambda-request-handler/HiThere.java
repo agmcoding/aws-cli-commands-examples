@@ -1,7 +1,17 @@
-public class HiThere {
+package java-lambda-request-handler;
 
-	public String handler(String name) {
-		return " Hi there " + name + " =D ";
-	}
+/**
+ * Example class
+ *
+ */
+final public class HiThere {
+
+    /**
+     * Request Handler method example
+     *
+     */
+    public String handleRequest(final String name) {
+        return " Hi there " + name + " =D ";
+    }
 
 }
