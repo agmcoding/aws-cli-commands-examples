@@ -1,4 +1,4 @@
-package java-lambda-request-handler;
+package example;
 
 /**
  * Example class
