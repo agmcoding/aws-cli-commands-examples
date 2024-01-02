@@ -1,6 +1,6 @@
 # AWS CLI Commands Examples
 
-## Hi there!
+## Hi there
 
 ## Summary of this project
 
