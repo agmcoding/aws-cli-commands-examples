@@ -12,7 +12,7 @@ For creating a java project and adding dependencies, you can choose the approach
 ## Packing
 
 You may choose a java package manager according to your preferences, so that the java application can be packaged and uploaded to AWS Lambda.
-With Maven, for example, you can go the command line, go to the directory where is the java project and type: `mvn clean package`
+With Maven, for example, you can go the command-line, go to the directory where is the java project and type: `mvn clean package`
 
 This will allow Maven to clean target files, then `package` packages the project and creates a *.jar* file (java archive file) with the dependencies and contents from the project.
 That *.jar* file can be uploaded to the AWS Lambda as a runtime for a new Lambda Function.
@@ -20,7 +20,7 @@ That *.jar* file can be uploaded to the AWS Lambda as a runtime for a new Lambda
 ## Uploading the Java Code to Lambda
 
 You may choose the approach according to your preferences.
-One of the approaches is using the AWS CLI (Command Line Interface):
+One of the approaches is using the AWS CLI (Command-Line Interface):
 
 ### Creating a Lambda Function
 
@@ -38,12 +38,12 @@ For example: `--function-name "name-of-the-new-function"` where in this example 
 The `--runtime` option is required for the `create-function` command and it expects a String as the identifier of the function's runtime.
 For example: `--runtime  "java11"`
 
-The `--zip-file` option expects a *blob* (Binay Large Object) as the path to the zip file of the code to be uploaded to a new Lambda function.
+The `--zip-file` option expects a *blob* (Binay Large Object) as the path to the ZIP file of the code to be uploaded to a new Lambda function.
 For example: `--zip-file "fileb://code.zip"`
 In this case, with a java project, a *.jar* file can be uploaded.
 For example: `--zip-file "fileb://java-code.jar"`
 
-The `--handler` option is required for the `create-function` command if the deployment package is a *.zip* file archive.
+The `--handler` option is required for the `create-function` command if the deployment package is a ZIP file, `.zip`, archive.
 It expects a String as the name of the method within the code to be uploaded to the new Lambda function. That's the method that Lambda will call to run.
 
 The `--timeout` option expects an integer as the the amount of time in seconds that the new function should be allowed to run before stopping it.

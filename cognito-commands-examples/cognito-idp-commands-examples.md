@@ -49,7 +49,7 @@ Some of the commands can be related to both AWS Cognito and OAuth protocol. You 
 
 The `create-user-pool-client` command creates a user pool client.
 
-The `--user-pool-id` option is required for the `create-user-pool-client` command and it expects a String as the user pool id where it will be created the new user pool client.
+The `--user-pool-id` option is required for the `create-user-pool-client` command and it expects a String as the user pool ID where it will be created the new user pool client.
 For example: `--user-pool-id "us-east-1_user-pool-id"`
 
 The `--client-name` option is required for the `create-user-pool-client` command and it expects a String as the name of the new user pool client.
@@ -60,7 +60,7 @@ The `--generate-secret` option is the opposite of the `--no-generate-secret` opt
 The `--explicit-auth-flows` option expects a list of authentication flows that the user pool client will support.
 For example: `--explicit-auth-flows "ALLOW_USER_SRP_AUTH" "ALLOW_REFRESH_TOKEN_AUTH" "ALLOW_CUSTOM_AUTH"`
 
-The `--id-token-validity` option expects an Integer as the id token time limit.
+The `--id-token-validity` option expects an Integer as the ID token time limit.
 For example: `--id-token-validity 1`, where the time unit of it can be specified in the `--token-validity-units` option in the command.
 
 The `--access-token-validity` option expects an Integer as the access token time limit.

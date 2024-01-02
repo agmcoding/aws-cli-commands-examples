@@ -1,6 +1,6 @@
 # Summary of this file
 
-It has some examples of the `aws lambda` command (known as the AWS Lambda functions service), like creating a function and listing functions on the command line.
+It has some examples of the `aws lambda` command (known as the AWS Lambda functions service), like creating a function and listing functions on the command-line.
 
 ## Example 1 - Creating a Lambda function
 
@@ -17,12 +17,12 @@ For example: `--description "New Lambda function for the services"`
 The `--runtime` option is required for the `create-function` command and it expects a String as the identifier of the function's runtime.
 For example: `--runtime  "java11"`
 
-The `--zip-file` option expects a *blob* (Binay Large Object) as the path to the zip file of the code to be uploaded to a new Lambda function.
+The `--zip-file` option expects a *blob* (Binay Large Object) as the path to the ZIP file of the code to be uploaded to a new Lambda function.
 For example: `--zip-file "fileb://code.zip"`
 
 **Note:** In the command, do not use both `--zip-file` and `--code` option, just one or the other. The `--code` option specifies an Amazon S3 location.
 
-The `--handler` option is required for the `create-function` command if the deployment package is a *.zip* file archive.
+The `--handler` option is required for the `create-function` command if the deployment package is a ZIP file, `.zip`, archive.
 It expects a String as the name of the method within the code to be uploaded to the new Lambda function. That's the method that Lambda will call to run.
 
 The `--timeout` option expects an integer as the the amount of time in seconds that the new function should be allowed to run before stopping it.
@@ -36,7 +36,7 @@ For example: `--role "arn:aws:iam::accountid:role/rolepathname"`
 
 If you want to create a role for the Lambda function, you may want to use the `aws iam` command (known as the AWS Identity Access Management - IAM service) and use the command `aws iam create-role` for this specific new Lambda function.
 
-#### Creating a Role for a Lambda Function
+### Creating a Role for a Lambda Function
 
 Through the AWS CLI, these commands can be used:
 
