@@ -1,6 +1,6 @@
 # Explanation of the Lambda function with a Java code example
 
-This is just an example of a java class with a `handle()` request method that can be uploaded with a java project to AWS Lambda. Here it explains some of the preparation, uploading the code and calling the Lambda Function with the AWS CLI.
+This is just an example of a java class with a `handleRequest()` method that can be uploaded with a java project to AWS Lambda. Here it explains some of the preparation, uploading the code and calling the Lambda Function with the AWS CLI.
 
 ## Preparation
 
@@ -26,7 +26,7 @@ One of the approaches is using the AWS CLI (Command-Line Interface):
 
 Through the AWS CLI, the `aws lambda create-function` command can be used:
 
-`aws lambda create-function --function-name <value> --runtime <value> --zip-file <value> --handler <value> --timeout <value> --region <value> --role <value>`
+`aws lambda create-function --function-name "value" --runtime "value" --zip-file "value" --handler "value" --timeout "value" --region "value" --role "value"`
 
 #### Explanation of this Lambda command
 
@@ -62,13 +62,13 @@ In this project of AWS CLI commands examples, there is an example of this comman
 
 Through the AWS CLI, the `aws lambda invoke` command can be used:
 
-`aws lambda invoke --function-name <value> --invocation-type <value> --payload <value> --output <value> <outfile>`
+`aws lambda invoke --function-name "value" --invocation-type "value" --payload "value" --output "value" "outfile"`
 
 The `invoke` command invokes a Lambda function.
 
 The `--function-name` option is required for the `invoke` command and it expects a String as the name of the Lambda function, version or alias.
 For example: `--function-name "name-of-the-function"` where in this example the name was typed in the **Function name** format, and there are 2 other possible formats: the **Function ARN** and the **Partial ARN**.
-The version or the alias of the function can be appended in any of the shown formats, or they can be specified at a `--qualifier <value>` option.
+The version or the alias of the function can be appended in any of the shown formats, or they can be specified at a `--qualifier "value"` option.
 
 The `--invocation-type` option expects a String as one of these values: `RequestResponse` (default), `Event` and `DryRun`.
 For example: `--invocation-type "RequestResponse"`
@@ -79,7 +79,7 @@ For example, the input can be either a JSON itself, like: `--payload '{ "name": 
 The `--output` option expects a String as the formatting style for command output.
 For example: `--output yaml` where it can be `json`, `yaml`, `yaml-stream`, `text` and `table`.
 
-The `<outfile>` option does not need to be typed in the command. It expects a String as the file where the response content will be saved.
+The `"outfile"` option does not need to be typed in the command. It expects a String as the file where the response content will be saved.
 For example: `aws lambda invoke --function-name "name-of-the-function" file-to-save-function-response.json`
 
 Source: AWS documentation

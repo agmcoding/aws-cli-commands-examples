@@ -4,7 +4,7 @@ It has some examples of the `aws cognito-idp` command (known as the AWS Cognito 
 
 ## Example 1 - Creating a new Cognito user pool
 
-`aws cognito-idp create-user-pool --pool-name <value> --username-attributes <value> --auto-verified-attributes <value> --policies <value> --schema <value> --account-recovery-setting <value> --region <value>`
+`aws cognito-idp create-user-pool --pool-name "value" --username-attributes "value" --auto-verified-attributes "value" --policies "value" --schema "value" --account-recovery-setting "value" --region "value"`
 
 The `create-user-pool` command creates a new AWS Cognito user pool.
 
@@ -31,7 +31,7 @@ For example: `--region "us-east-1"`
 
 ## Example 2 - Listing user pools
 
-`aws cognito-idp list-user-pools --region <value> --output <value>`
+`aws cognito-idp list-user-pools --region "value" --output "value"`
 
 The `list-user-pools` command lists the user pools related to the AWS account that is using the command.
 
@@ -43,7 +43,7 @@ For example: `--output yaml` where it can be `json`, `yaml`, `yaml-stream`, `tex
 
 ## Example 3 - Creating an user pool client
 
-`aws cognito-idp create-user-pool-client --user-pool-id <value> --client-name <value> --generate-secret --explicit-auth-flows <value> --id-token-validity <value> --access-token-validity <value> --refresh-token-validity <value> --token-validity-units <value> --allowed-o-auth-flows <value> --allowed-o-auth-scopes <value>`
+`aws cognito-idp create-user-pool-client --user-pool-id "value" --client-name "value" --generate-secret --explicit-auth-flows "value" --id-token-validity "value" --access-token-validity "value" --refresh-token-validity "value" --token-validity-units "value" --allowed-o-auth-flows "value" --allowed-o-auth-scopes "value"`
 
 Some of the commands can be related to both AWS Cognito and OAuth protocol. You may want to find more information by searching about OAuth and tokens.
 
@@ -80,7 +80,7 @@ For example: `--allowed-o-auth-scopes "email" "openid"`
 
 ## Example 4 - Adding a Cognito Authorizer to API Gateway
 
-`aws apigateway create-authorizer --name <value> --rest-api-id <value> --type <value> --provider-arns <value> --identity-source <value>`
+`aws apigateway create-authorizer --name "value" --rest-api-id "value" --type "value" --provider-arns "value" --identity-source "value"`
 
 In this example, the necessary command is from the `aws apigateway` command (known as the AWS API Gateway service).
 

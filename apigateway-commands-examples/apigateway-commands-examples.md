@@ -4,7 +4,7 @@ In this file there are some examples of the `aws apigateway` command (known as t
 
 ## Example 1 - Creating a new Rest API resource
 
-`aws apigateway create-rest-api --name <value> --description <value> --region <value>`
+`aws apigateway create-rest-api --name "value" --description "value" --region "value"`
 
 The `create-rest-api` command creates a new Rest API resource.
 
@@ -19,7 +19,7 @@ For example: `--region "us-east-1"`
 
 ## Example 2 - Listing information about a collection of resources
 
-`aws apigateway get-resources ---region <value> --rest-api-id <value>`
+`aws apigateway get-resources ---region "value" --rest-api-id "value"`
 
 The `get-resources` command lists information about a collection of Resource resources. **Note:** There are two similar commands, `get-resources` and `get-resource`, where `get-resource` lists information about a resource.
 
@@ -31,7 +31,7 @@ For example: `--rest-api-id "requestedrestapiid"`
 
 ## Example 3 - Creating a resource
 
-`aws apigateway create-resource --rest-api-id <value> --parent-id <value> --path-part <value>`
+`aws apigateway create-resource --rest-api-id "value" --parent-id "value" --path-part "value"`
 
 The `create-resource` command creates a Resource resource.
 
@@ -46,7 +46,7 @@ For example: `--path-part "resourcename"`
 
 ## Example 4 - Adding a method to an existing resource
 
-`aws apigateway put-method --rest-api-id <value> --resource-id <value> --http-method <value> --authorization-type <value>`
+`aws apigateway put-method --rest-api-id "value" --resource-id "value" --http-method "value" --authorization-type "value"`
 
 The `put-method` command adds a method to an existing Resource resource.
 
@@ -64,7 +64,7 @@ For example: `--authorization-type "NONE"` where "NONE" means open access.
 
 ## Example 5 - Adding a Cognito Authorizer to API Gateway
 
-`aws apigateway create-authorizer --name <value> --rest-api-id <value> --type <value> --provider-arns <value> --identity-source <value>`
+`aws apigateway create-authorizer --name "value" --rest-api-id "value" --type "value" --provider-arns "value" --identity-source "value"`
 
 The `create-authorizer` commmand adds a new authorizer resource to an existing Rest API resource.
 
