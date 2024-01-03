@@ -4,7 +4,7 @@ In this file there are some examples of the `aws dynamodb` command (known as the
 
 ## Example 1 - Adding a new table
 
-`aws dynamodb create-table --table-name <value> --attribute-definitions <values> --key-schema <value> --region <value>`
+`aws dynamodb create-table --table-name "value" --attribute-definitions "values" --key-schema "value" --region "value"`
 
 The `create-table` command adds a new table to the account that is using the command.
 
@@ -23,7 +23,7 @@ For example: `--region "us-east-1"`
 
 ## Example 2 - Listing table names
 
-`aws dynamodb list-tables --output <value>`
+`aws dynamodb list-tables --output "value"`
 
 The `list-tables` command returns an array of table names associated with the account that is using the command and the endpoint.
 
